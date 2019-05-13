@@ -16,4 +16,8 @@ app.get('/users', (req, res) => {
     res.status(200).json(users)
 })
 
+app.post('/users', (req, res) => {
+    res.status(201).json(req.body)
+})
+
 module.exports = app
